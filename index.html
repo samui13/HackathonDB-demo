@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="angularApp" id="top">
+  <head>
+    <meta content="!" name="fragment">
+    <title>{{title}}</title>
+    <meta http-equiv="Content-Style-Type" content="text/css; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript; charset=UTF-8">
+    <meta http-equiv="description" content="">
+    <meta http-equiv="keywords" content="">
+
+    <meta property="og:title" content="" /> 
+    <meta property="og:url" content="" /> 
+    
+    <meta property="og:description" content="" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <script src="./lib/venders/jquery/dist/jquery.min.js"></script>    
+    <script src="./lib/venders/angular/angular.min.js"></script>
+    <script src="./lib/venders/angular-route.min.js"></script>
+    <script src="./lib/venders/ui-bootstrap-tpls-0.9.0.js"></script>
+
+    <script src="./lib/app/app.js"></script>
+    <script src="./lib/app/service.js"></script>
+    <script src="./lib/app/controller.js"></script>
+    <script src="./lib/app/factory.js"></script>
+    <link rel="stylesheet" href="./lib/venders/bootstrap-css/css/bootstrap.css"></link>
+    <script src="./lib/venders/bootstrap-css/js/bootstrap.min.js"></script>
+    <script src="./lib/venders/jquery-ui/ui/jquery-ui.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+	<div class="col-md-3">
+	  <h1>Hackathon DB</h1>
+	  <ul>
+	    <li><a href="#!/">Top</a></li>
+	    <li><a href="#!/register">登録</a></li>
+	    <li>リスト</li>
+	  </ul>
+	</div>
+	<div class="col-md-9" ng-view></div>
+      </div>
+    </div>
+
+  </body>
+    
+</html>
