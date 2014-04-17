@@ -1,8 +1,11 @@
 <h2>{{title}}</h2>
 <div>
-  <div ng-repeat="item in productList">
-    <h3><a href="{{item.id}}">{{item.title}}</a></h3>
+  <div ng-repeat="item in productList" style="margin-bottom:10px;">
+    <h3><a href="#!/product/{{item.id}}">{{item.title}}</a></h3>
     <p>{{item.description}}</p>
     <p>{{item.url}}</p>
+    <ul style="list-style:none;margin-bottom:5px;">
+      <li style="display:inline;padding-left:10px;" ng-repeat="member in item.members">{{member}}</li>
+    </ul>
   </div>
 </div>
